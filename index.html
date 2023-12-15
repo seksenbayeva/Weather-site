@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Weather App</title>
+  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Метаданные для масштабирования на мобильных устройствах -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Метаданные для поисковых систем -->
+  <meta name="description" content="Weather App using JavaScript, HTML and CSS" />
+  <meta name="keywords" content="Weather App, HTML, CSS, JavaScript" />
+  <meta name="author" content="Ace Coder" />
+  <!-- Подключение стилей для иконок -->
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Подключение jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Верхний баннер с поиском -->
+  <section class="top-banner">
+    <div class="container">
+      <h1 class="heading">Weather App</h1>
+      <!-- Форма для поиска города -->
+      <form>
+        <input type="text" placeholder="Search for a city" autofocus />
+        <button type="submit">SUBMIT</button>
+        <span class="msg"></span> <!-- Сообщение об ошибке или статусе -->
+      </form>
+    </div>
+  </section>
+  <!-- Секция для отображения данных о погоде -->
+  <section class="ajax-section">
+    <div class="container">
+      <ul class="cities"></ul> <!-- Список городов и информации о погоде -->
+    </div>
+  </section>
+  <!-- Подключение скрипта для работы с API погоды -->
+  <script src="script.js"></script>
+</body>
+</html>
